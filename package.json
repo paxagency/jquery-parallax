@@ -1,0 +1,27 @@
+{
+  "name": "jquery-parallax",
+  "version": "0.0.2",
+  "license": "MIT",
+  "author": "Albert Kiteck <albert@paxagency.com>",
+  "description": "Jquery Parallax",
+  "main": "dist/jquery-parallax.js",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "keywords": [
+    "javascript",
+    "jquery",
+    "parallax"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paxagency/jquery-parallax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paxagency/jquery-parallax/issues"
+  },
+  "homepage": "https://github.com/paxagency/jquery-parallax#readme"
+}

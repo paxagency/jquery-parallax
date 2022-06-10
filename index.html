@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="dist/jquery-parallax.js"></script>
+        <link type="text/css" rel="stylesheet" href="dist/image-marquee.css">
+    </head>
+    <style>
+    	img {max-width:300px;display:block;position:absolute;top:200px; left:200px;}
+    	img:nth-child(1) {top:0px; left:200px;}
+    	img:nth-child(2) {top:200px; left:400px;}
+    	img:nth-child(3) {top:200px; left:100px;}
+    	img:nth-child(4) {top:400px; left:600px;}
+    	img:nth-child(5) {top:500px; left:150px;}
+    	img:nth-child(6) {top:600px; left:400px;}
+    	img:nth-child(7) {top:800px; left:100px;}
+    	img:nth-child(8) {top:800px; left:600px;}
+    	img:nth-child(9) {top:1000px; left:300px;}
+    	body {padding-bottom:400px;}
+    </style>
+    <body>
+       
+<img src='https://media.pitchfork.com/photos/5ddc72886133160008c6465f/1:1/w_560/suite_jeffparker.jpg'/>
+<img src='https://i.scdn.co/image/36667ea9baa32bf5f5ff620816971b3bb70b5d83'/>
+<img src='https://media.pitchfork.com/photos/5d6593d326e2b40009eed797/1:1/w_560/suite_jeffparker.jpg'/>
+<img src='https://media.pitchfork.com/photos/5cb88748090eeb2dcf25dec5/1:1/w_560/suite_jeffparker.jpg'/>
+<img src='https://i1.wp.com/alfitude.com/wp-content/uploads/2020/02/almost-monday-music.jpg?w=640&ssl=1'/>
+<img src='https://media.pitchfork.com/photos/5afb000a846bf02b4c448b2f/1:1/w_560/suite_jeffparker.jpg'/>
+<img src='https://media.pitchfork.com/photos/5ab41f308195c0189f1354ee/1:1/w_560/suite_jeffparker.jpg'/>
+<img src='https://media.pitchfork.com/photos/5a0226d7ffdefc2c0f6f16a4/1:1/w_560/suite_jeffparker.jpg'/>
+<img src='https://media.pitchfork.com/photos/59c1498b62f8b05385d543e5/1:1/w_560/suite_jeffparker.jpg'/>
+     
+    </body>
+
+ <script>
+   
+   var data = [
+		{speed:30,blur:3,scale:.5},
+		{speed:40,index:2},
+		{speed:30,blur:2,scale:.7},
+		{speed:60,index:2},
+		{speed:20,blur:3,scale:.5},
+		{speed:30,index:2},
+		{speed:50},
+		{speed:30,index:2,scale:.5},
+	];
+	$('img').each(function(i,o){
+		$(this).parallax(data[i]);
+	});
+ </script> 
+
+</html>
